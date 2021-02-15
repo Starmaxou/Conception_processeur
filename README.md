@@ -14,3 +14,7 @@ Jeu d'instruction du processeur à réaliser :
 Diagramme d'état de la machine à état fini :
 
 ![Schéma FSM](Pictures/Conception-FSM.png "Schéma FSM")
+
+Synoptique du processeur :
+
+![Synoptique](Pictures/Conception-Schema.png "Synoptique")
