@@ -91,6 +91,14 @@ begin
                out_data => reg_data_out
                );
 
+    Registre_Accu : registre
+         port map ( in_data => UAL_out,
+                  load_reg => B_load_reg_accu,
+                  ce => CE,
+                  clk => H,
+                  reset => RST,
+                  out_data => reg_accu_out
+                  );
     
     myUAL : UAL
         port map ( sel_UAL => A_sel_UAL,
@@ -109,4 +117,6 @@ begin
                init_carry => E_init_carry,
                out_carry => carry
         );
+        
+    write_mem <= reg_accu_out;
 end Behavioral;
