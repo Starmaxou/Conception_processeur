@@ -85,7 +85,7 @@ sig_clk   <= clk100M;
 
 -- Attention pour la simulation mettre  ce de UT et UC ? ce25M sinon ce1s
 														  
-proc  				 : myProcessor port map ( CE => ce1s,
+proc  				 : myProcessor port map ( CE => ce25M,
                                       H=> sig_clk,
 									  RST => sig_reset, 
 									  mem_in => Data_Unit_Mem,
